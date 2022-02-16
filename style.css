@@ -1,0 +1,35 @@
+body{
+    background-image: url(space.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    
+  }
+  
+  .bird{
+    width: 140px;
+    position: absolute;
+    left: 20%;
+    top: 10%;
+    /* forwards */
+    animation: birdAnim 6s infinite;
+   
+  }
+  .bird img{
+    width: 100%;
+  }
+  
+  @keyframes birdAnim{
+    0%{
+      left: 0%;
+      transform: rotate(45deg);
+    }
+    50%{
+      left: 25%;
+      top: 40%;
+      transform: rotate(-20deg);
+    }
+    100%{
+      left: 100%;
+    }
+  }
